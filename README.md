@@ -1,3 +1,5 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 # 天池美年AI双高疾病风险预测第一赛季
 
 ## 赛题描述
@@ -13,9 +15,9 @@
 ## 评估标准
 
 参赛选手需要提交对每个个体的收缩压，舒张压，甘油三酯，高密度脂蛋白胆固醇和低密度脂蛋白胆固醇五项指标预测结果，以小数形式表示，保留小数点后三位。该结果将与个体实际检测到的数值进行对比。对于第j项指标，计算公式如下：
-```mathe_j=\frac{1}{m}\sum_{i=1}^{m}\left ( log\left ( {y_i}'+1 \right )-log\left ( y_i+1 \right ) \right )^{2}```
+$$e_j=\frac{1}{m}\sum_{i=1}^{m}\left ( log\left ( {y_i}'+1 \right )-log\left ( y_i+1 \right ) \right )^{2}$$
 其中m为总人数，yi'为选手预测的第i个人的指标j的数值，yi为第i个人的指标j的实际检测值。最后的评价指标是五个预测指标评估结果之和：
-```mathE=\frac{1}{5}\sum_{n=1}^{5}e_n```
+$$E=\frac{1}{5}\sum_{n=1}^{5}e_n$$
 
 ## 数据预处理
 
