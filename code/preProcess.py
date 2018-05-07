@@ -50,7 +50,7 @@ def numeric_feature(part_2):
 
     def strQ2B(ustring):
         """把字符串全角转半角"""
-        ustring = ustring.decode('utf8')
+        # ustring = ustring.decode('utf8')
         rstring = ""
         for uchar in ustring:
             inside_code = ord(uchar)
@@ -58,7 +58,7 @@ def numeric_feature(part_2):
                 inside_code = 0x0020
             elif (inside_code >= 0xFF01) and (inside_code <= 0xFF5E):
                 inside_code -= 0xfee0
-            rstring += unichr(inside_code)
+            rstring += chr(inside_code)
         return rstring
 
     # 提取数值
