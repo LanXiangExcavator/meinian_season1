@@ -1,5 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
 # 天池美年AI双高疾病风险预测第一赛季
 
 ## 赛题描述
